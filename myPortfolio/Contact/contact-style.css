@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+
+.background {
+
+    position:relative;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.background::before {
+
+    content: "";
+    background-image: url('images/Image3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+
+}
+   
+
+.personalInfo-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+
+}
+
+.personalInfo {
+
+    font-size: 3em;
+    position: relative;
+   
+}
+
+.email-logo {
+
+    position: relative;
+    top: 10px;
+}
+
+.phone-logo {
+    
+    position: relative;
+    top: 10px;
+}
+
+#github-logo {
+
+    position: relative;
+    top:10px;
+}
