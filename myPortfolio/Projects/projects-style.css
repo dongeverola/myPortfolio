@@ -1,0 +1,128 @@
+*{
+    box-sizing:border-box;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background-container {
+
+    position:relative;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.background-container::before {
+
+    content: "";
+    background-image: url('background-image1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+
+
+   
+}
+
+.nav-section {
+    height: 13vh;
+    width: 100%;
+    position: relative;
+
+}
+
+.nav-left {
+
+ 
+    position: relative;
+}
+
+#back-logo {
+
+    padding-bottom: 5em;
+    position: relative;
+    top: 37px;
+    left: 60px;
+    opacity: 0.7;
+    transition: 0.2s;
+
+
+}
+
+#back-logo:hover {
+
+    cursor: pointer;
+    opacity: 0.3;
+    
+}
+
+
+.project-section {
+    
+    display: flex;
+    height: 70vh;
+    background-color: lightgrey;
+    flex-direction: column;
+}
+
+
+.project-section h2 {
+
+    text-transform: uppercase;
+    opacity: 0.7;
+    font-size: 2.8em;
+
+}
+.project-1 {
+
+    flex: 33%;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+   
+
+}
+
+.project-link {
+
+    font-size: 2.3em;
+    text-decoration: none;
+    color: darkcyan;
+
+}
+
+.project-link:hover {
+
+    font-weight: bold;
+}
+
+.project-2 {
+
+    flex: 33%;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+   
+    
+
+}
+
+.project-3 {
+
+    flex: 33%;
+}
