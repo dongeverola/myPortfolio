@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+
+.background-container {
+
+    position:relative;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.background-container::before {
+
+    content: "";
+    background-image: url('Images/Image1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+
+
+   
+}
+
+
+.nav-container {
+    padding: 0em 5em;
+    position: relative;
+}
+.nav-right {
+
+    display: flex;
+    justify-content: flex-end;
+    padding: 2em;
+}
+
+.nav-right li {
+    list-style-type: none;
+    
+    
+}
+
+.nav-right ul {
+    
+    display: inline-block;
+   
+}
+
+
+
+.nav-right li ul a {
+
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    
+}
+
+.nav-right li ul a:hover {
+
+    border-bottom: 3px solid grey;
+    
+}
+
+.header-container {
+    
+    padding: 10em;
+    display: grid;
+    grid-gap: 10em;
+    position: relative;
+    flex-direction: column;
+   
+}
+
+.introduction-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.introduction-wrapper p {
+    font-size: 3em;
+    font-family: 'Darker Grotesque', sans-serif;
+    
+}
+
+.capitalize {
+    font-size: 1.5em;
+}
+
+.underline {
+    
+    border-bottom: 1px solid grey;
+  
+}
+
+.button-container {
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+
+}
+
+.button {
+
+   
+    border: 2px black solid;
+    font-family: 'Darker Grotesque', sans-serif;
+    padding: 10px 50px;
+    font-size: 2em;
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover {
+
+    background-color: rgba(223, 221, 221, 0.1);
+    cursor: pointer;
+}
