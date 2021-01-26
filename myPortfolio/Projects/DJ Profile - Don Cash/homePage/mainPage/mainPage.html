@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="menu.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;400;600&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="logo" onclick="goBack()">DONCASH</a>
+            <input class="menu-btn" type="checkbox" id="menu-btn"> <!--function of checkbox so we can click the hamburger menu-->
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label> <!--nav icon so we can style the three lines for hamburger menu style-->
+            
+                <ul class="menu">
+                    <li><a href="https://soundcloud.com/don-geverola" target="_blank" >Mixtapes</a></li>
+                    <li><a href="Tutorials/landingPage1.html" target="_blank">Tutorials</a></li>
+                    <li><a href="Portfolio/portfolio.html" target="_blank"> Portfolio </a></li>
+                    <li> <a href="https://www.instagram.com/djdoncash/" target="_blank">
+                    <img src="https://www.transparentpng.com/thumb/logo-instagram/o0u6HK-logo-instagram-clipart-file.png"
+                     alt="Logo Instagram Clipart File @transparentpng.com" class="mainmenu-instagram-icon" id="mmigicon"></a> </li>
+                </ul>
+        </header>
+        <main id="main-wrapper" class="grid">
+        
+            <div class="image-wrapper">
+            
+                <div class="main-image">
+                    <img src="ProfileImage.jpg" id="main-image" alt="CDJ Nexus 2000" >
+                    
+                    <!-- The Modal -->
+
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+            
+                </div>
+            </div>
+
+        
+            
+        <main class="main-text">
+            
+            <p id="about-link"> 
+            
+                    Don Cash has been in the industry since 2015, Influenced by his father (Radio and Club DJ);
+                    growing up surrounded with music on all kinds of Genre, 90’s, 2000’s to Present. 
+                    His love with the Art and the Scene of DJing led him to improve every corner of his skills from
+                    technicality to crowd reading to connect and entertain all types of crowd.
+                    <!-- Hide fnctn--> <span id="dots"> &nbsp </span><span id="more">
+                        <br>
+                        <br>
+                    His skills has been proven and tested through the years, he has played a lot of private parties, clubs, bars, events. 
+                    He has opened sets for numerous DJs from Manila, DJs Butta B, Marvelous, DJ Ace Ramos, 
+                    Jeb Tizon, Hannah Ichiko. He is a former Resident DJ at Somewhere Else CDO, Kardinal 
+                    Lifestyle District CDO, Blackout CDO, Superstar Club CDO, 4daboys Lounge and Pub CD, 
+                    Watever KTV Bar CDO, a semi-finals champion CDO leg of San Mig Light DJ Spin Off 2019.
+                </span>   
+
+                
+            </p>
+
+                <div class="main-button" onclick="myFunction()" id="myBtn"> <em>Read More</em> </div>
+        </main>
+    
+        <footer id="socials-icon" class="site-footer" role="contentinfo">
+
+                <div class="website-info">
+
+                    <p> DONCASH.com </p>
+
+                </div>	
+            
+        </footer>
+
+    <script>
+
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Hide"; 
+            moreText.style.display = "inline";
+          }
+        }
+
+        
+        function goBack() {
+            window.history.back();
+        }
+
+
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+            
+            var img = document.getElementById("main-image");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+            
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+        modal.style.display = "none";
+        }
+
+        
+    </script>
+</body>
+</html>

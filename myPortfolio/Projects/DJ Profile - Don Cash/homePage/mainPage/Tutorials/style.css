@@ -1,0 +1,239 @@
+
+body, html {
+	
+	width: 100%;
+	padding: 0px;
+	height:100%;
+	margin:0;
+	font-size:16px;
+	font-family:"Lato", sans-serif;
+	font-weight:400;
+	line-height:1.8em;
+	color:#666;
+	box-sizing: border-box;
+}
+
+
+
+.part1background{
+	
+	position:relative;
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	opacity: 0.90;
+	background-attachment: fixed;
+	/* 
+		fixed = parallax
+		scroll = normal
+	*/	
+}
+
+.part1background {
+	
+	background-image:url('images/CDJ.jpeg');
+	height:100%;
+	display: flex;
+}
+
+
+.part1intro{
+	
+	position:absolute;
+	top:50%;
+	width: 100%;
+	text-align:center;
+	color: white;
+	/* color:#36454f; */
+	font-size:50px;
+	letter-spacing:7px;
+	text-transform:uppercase;
+	font-weight: 900;
+	text-shadow: 5px 3px 5px #36454f;
+}
+
+
+.part1intro p {
+	
+	position:relative;
+	top:110%;
+	text-align:center;
+	color:#FFFAFA;
+	font-size:15px;
+	letter-spacing:3px;
+	text-transform:uppercase;
+	background-color:#36454f;
+	font-weight: normal;
+	padding: 5px;
+	width:auto;
+	text-shadow: none;
+	
+	
+}
+
+
+.button-wrapper{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 150%;
+	
+	
+	}
+	
+
+.buttontext{
+	cursor: pointer;
+	border: 1px solid grey;
+	padding: 1em 2em;
+
+}
+
+
+.button-wrapper a{
+	
+	color: white;
+	background-color:transparent;
+	font-size: 25px;
+	text-align: center;
+	text-decoration: none;
+
+}
+
+.button-wrapper a:hover {
+	opacity: 0.9;
+	box-shadow: 0px 0px 0px 1px grey;
+}
+
+.lesson1 {
+	
+	text-align: center;
+	position: relative;
+	margin-top: 100px;
+
+}
+
+.lesson1 .sectionheader {
+	
+	
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	color:white;
+	line-height: 3.0;
+	word-spacing: 2px;
+	letter-spacing: 3px;
+	
+
+}
+
+.sectiontext{
+	
+	line-height: 3.0;
+	word-spacing: 2px;
+	letter-spacing: 3px;
+	color:white;
+	padding: 250px;
+	text-align: center;
+}
+
+.wrapper-light{
+	
+	padding-top:20px;
+	padding-bottom: 20px;
+	width:100%;
+	background-color: #FF7F50;
+	
+	
+}
+
+
+.wrapper-dark{
+	
+	padding-top:20px;
+	padding-bottom: 20px;
+	width:100%;
+	background-color: #36454f;
+	
+}
+
+.motto {
+	
+	margin-top: 50px;
+	
+}
+
+.wrapper-footer{
+	
+	display: grid;
+	
+}
+
+.box1 {
+	
+	padding: 50px;
+	background-color: #FF7F50;
+	grid-column-start: 1;
+  	grid-column-end: 2;
+ 	position: relative;
+  	text-align: center;
+   	color: white;
+}
+
+.box2 {
+	
+	padding: 50px;
+	background-color: #36454f;
+	grid-column-start: 2;
+  	grid-column-end: 3;
+  	position: relative;
+  	text-align: center;
+	color: white;
+	
+}
+
+.box3 {
+	
+	padding: 50px;
+	background-color: #FF7F50;
+	grid-column-start: 3;
+  	grid-column-end: 4;
+  	position: relative;
+   	text-align: center;
+   	color: white;
+
+	
+}
+
+
+@media only screen and (max-width: 650px){
+
+	
+.part1intro > .header {
+	font-size: 33px;
+	padding: 0 1px;
+}
+
+.sectiontext{
+	
+	line-height: 3.0;
+	word-spacing: 2px;
+	letter-spacing: 3px;
+	color:white;
+	padding: 2em;
+	text-align: center;
+}
+
+.wrapper-footer{
+	
+	display: flex;
+	flex-direction: column;
+	
+}
+
+
+.button-wrapper{
+
+	display: none;
