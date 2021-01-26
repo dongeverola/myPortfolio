@@ -1,0 +1,16 @@
+*{
+
+    box-sizing: border-box;
+
+}
+body {
+
+    background-color: lightgrey;
+   
+}
+
+.gallery-container > div {
+
+    width: 100%;
+
+}

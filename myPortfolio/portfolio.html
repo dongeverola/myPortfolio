@@ -8,43 +8,66 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  
 </head>
 
+<body>
+
 <div class="background-container" data-aos="fade-down">
 
-<div class="nav-container">
+    <div class="nav-container">
 
-    <div class="nav-right" data-aos="fade-left">
-        <li>
-            <ul> <a href="Contact/contact.html" target=_blank> Contact </a> </ul>
-            <ul> <a href="About/about.html" target="_blank"> About </a> </ul>
-        </li>
+        <div class="nav-bar" id="nav-bar" data-aos="fade-left">
+
+            <button class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <ul class="nav-ul" id="nav-ul">
+                <li><a href="Projects/projects.html"> Projects </a></li>
+                <li><a href="Contact/contact.html" target=_blank> Contact </a></li>
+                <li><a href="About/about.html" target="_blank"> About </a></li>  
+            </ul>
+
+        </div>
+
     </div>
+
+    <div class="header-container">
+
+        <div class="introduction-wrapper" data-aos="fade-down">
+
+            <p>  Don Geverola </p>
+
+            <div class="title"> Front end Developer </div>
+
+        </div>
+    
+        <div class="button-container">
+
+            <a href="Projects/projects.html" class="button" data-aos="fade-right"> Projects &#8640;</a>
+
+        </div>
+    </div>
+
 </div>
 
-<div class="header-container">
-    <div class="introduction-wrapper" data-aos="fade-down">
-       <p> <span class="capitalize"> Hi, </span> my name is Don. I am a <span class=
-        "underline">Front-End Developer</span> </p>
-    </div>
 
+<!--FOOTER -->
 
-    <div class="button-container">
-        <a href="Projects/projects.html" class="button" data-aos="fade-right"> Projects &#8640;</a>
-    </div>
-</div>
-
-</div>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init({
-      offset: 200,
+      offset: 100,
       duration: 1000
   });
 </script>
 
+<script src="script.js"></script>
+
+</body>
 </html>
 
 

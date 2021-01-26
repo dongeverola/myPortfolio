@@ -1,0 +1,21 @@
+
+This DJ Profile project for Don Cash has the following features
+
+- Hamburger Menu
+- Read More / Read Less Button
+- Sticky Navbar
+- Modal (clickable) Image
+
+
+
+
+Nav Bar
+Hamburger Menu
+Read More (Hide & Show More Button)
+
+                        <!--                        REFERENCES
+
+                                     W3schools.com (MODALS) 
+                                    FollowAndrew (youtubechannel) Hamburger Navbar CODES
+                        -->
+   
