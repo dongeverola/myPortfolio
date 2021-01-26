@@ -1,0 +1,210 @@
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    width: 100%;
+    overflow: auto;
+
+}
+
+.navbar-container{
+
+width: 100%;
+padding: 1.5em 2em;
+background-color: white;
+box-shadow: 0px 0px 10px 0px lightgrey;
+
+}
+
+.navbar ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 25px;
+}
+
+.navbar a {
+    color: grey;
+    text-decoration: none;
+}   
+
+.navbar-leftside a:hover {color: darkgrey;}
+
+.hamburger {
+    background-color: transparent;
+    border:0;
+    color: black;
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger:focus {outline: none;}
+
+.header-container{
+
+    padding: 4em 0em 2em 0em;
+    width:100%;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Epilogue', sans-serif;
+    
+}
+
+.main-container {
+
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.photo-section{
+    
+    padding: 3rem 0rem 5rem 0rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-section img {
+
+    width: 500px;
+    height: 550px;
+    border-radius: 1px;
+}
+
+.biography-section {
+    padding:3em 22em;
+    width:100%;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.biography-section p{
+
+    line-height: 1.8;
+    letter-spacing: 1px;
+    font-size: 2em;
+}
+
+.image {
+
+    width: 100%;
+    height: 35vh;
+    position: relative;
+    margin: 7em 0em;
+}
+
+.image:before {
+    content: "";
+    background-image: url('image1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.image-text-container{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 3;
+}
+
+.image-text{
+
+    background-color: rgb(161, 161, 161);
+    font-size: 40px;
+    color: white;
+    padding: 10px 38px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    box-shadow: 0px 5px 5px 0px grey;
+    letter-spacing: 3px;
+
+}
+.videos-section {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8em 1em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#emdocumentary {border-radius: 1px;}
+
+.footer {
+
+    padding: 5rem 1rem 2rem 1rem;
+    background-color: rgb(248, 248, 248);
+    text-align: center;
+    font-size: 1.5rem;
+    
+    
+}
+
+.footer a{
+    text-decoration: none;
+    color:black;
+    font-family: 'Epilogue', sans-serif;
+}
+
+
+@media only screen and  (max-width:800px){
+
+    .navbar-container {
+        position: absolute;
+        z-index: 1;
+    }
+
+    .nav-ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: white;   
+    }
+
+    .navbar ul li {padding: 2rem;}
+
+    .nav-ul.show {display: flex;}
+        
+    .hamburger {display: inline-block;}
+
+    .header-container {
+        font-size: 2rem;
+        padding-top: 14rem;
+    }
+
+    .photo-section img{padding: 3rem;}
+
+    .biography-section {padding: 3em;}
+
+    .videos-section {padding: 8em 1em;}
+}
